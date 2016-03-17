@@ -1,0 +1,4 @@
+QT动作编辑器	基于cocos3.6开发
+运行环境win32
+使用方法：将cocos3.6的cocos2d文件夹拷贝到AnimateEditor\AnimateEditor文件夹下复制source_cpp中的所有文件覆盖到cocos2d\cocos文件夹下
+编译 运行即可

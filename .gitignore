@@ -1,0 +1,8 @@
+Debug.win32
+Release.win32
+AnimateEditor.sdf
+AnimateEditor\cocos2d
+AnimateEditor\Release.win32
+AnimateEditor\Debug.win32
+AnimateEditor\GeneratedFiles
+

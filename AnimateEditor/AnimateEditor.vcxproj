@@ -1,0 +1,285 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{B12702AD-ABFB-343A-A199-8E24837244A3}</ProjectGuid>
+    <Keyword>Qt4VSv1.0</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="cocos2d\cocos\2d\cocos2d_headers.props" />
+    <Import Project="cocos2d\cocos\2d\cocos2dx.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="cocos2d\cocos\2d\cocos2d_headers.props" />
+    <Import Project="cocos2d\cocos\2d\cocos2dx.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>12.0.30501.0</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(SolutionDir)$(Configuration).win32\</OutDir>
+    <IntDir>$(Configuration).win32\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>G:\AnimateEditor\Release.win32</OutDir>
+    <IntDir>$(Configuration).win32\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PreprocessorDefinitions>UNICODE;WIN32;WIN64;QT_DLL;QT_CORE_LIB;QT_GUI_LIB;QT_OPENGL_LIB;QT_WIDGETS_LIB;_DEBUG;_WINDOWS;_USE_MATH_DEFINES;GL_GLEXT_PROTOTYPES;CC_ENABLE_CHIPMUNK_INTEGRATION=1;COCOS2D_DEBUG=1;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.\GeneratedFiles;.;$(QTDIR)\include;.\GeneratedFiles\$(ConfigurationName);$(QTDIR)\include\QtCore;$(QTDIR)\include\QtGui;$(QTDIR)\include\QtOpenGL;$(QTDIR)\include\QtWidgets;$(EngineRoot)cocos\audio\include;$(EngineRoot)external;$(EngineRoot)external\chipmunk\include\chipmunk;$(EngineRoot)extensions;Classes;..;%(AdditionalIncludeDirectories);$(_COCOS_HEADER_WIN32_BEGIN);$(_COCOS_HEADER_WIN32_END);Classes\SQLite;Classes\json;Classes\CocosQtPort</AdditionalIncludeDirectories>
+      <Optimization>Disabled</Optimization>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <OutputFile>$(OutDir)\$(ProjectName).exe</OutputFile>
+      <AdditionalLibraryDirectories>$(QTDIR)\lib;$(_COCOS_LIB_PATH_WIN32_BEGIN);$(_COCOS_LIB_PATH_WIN32_END);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>qtmaind.lib;Qt5Cored.lib;Qt5Guid.lib;Qt5OpenGLd.lib;opengl32.lib;glu32.lib;Qt5Widgetsd.lib;$(_COCOS_LIB_WIN32_BEGIN);$(_COCOS_LIB_WIN32_END);%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <PreLinkEvent>
+      <Command>
+      </Command>
+    </PreLinkEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PreprocessorDefinitions>UNICODE;WIN32;WIN64;QT_DLL;QT_CORE_LIB;QT_GUI_LIB;QT_OPENGL_LIB;QT_NO_DEBUG;NDEBUG;QT_WIDGETS_LIB;_WINDOWS;_USE_MATH_DEFINES;GL_GLEXT_PROTOTYPES;CC_ENABLE_CHIPMUNK_INTEGRATION=1;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.\GeneratedFiles;.;$(QTDIR)\include;.\GeneratedFiles\$(ConfigurationName);$(QTDIR)\include\QtCore;$(QTDIR)\include\QtGui;$(QTDIR)\include\QtOpenGL;$(QTDIR)\include\QtWidgets;$(EngineRoot)cocos\audio\include;$(EngineRoot)external;$(EngineRoot)external\chipmunk\include\chipmunk;$(EngineRoot)extensions;Classes;..;%(AdditionalIncludeDirectories);$(_COCOS_HEADER_WIN32_BEGIN);$(_COCOS_HEADER_WIN32_END);Classes\SQLite;Classes\json;Classes\CocosQtPort;Classes\QTClass</AdditionalIncludeDirectories>
+      <DebugInformationFormat>None</DebugInformationFormat>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <BrowseInformation>true</BrowseInformation>
+      <Optimization>MaxSpeed</Optimization>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <OutputFile>$(OutDir)\$(ProjectName).exe</OutputFile>
+      <AdditionalLibraryDirectories>$(QTDIR)\lib;$(_COCOS_LIB_PATH_WIN32_BEGIN);$(_COCOS_LIB_PATH_WIN32_END);G:\AnimateEditor\Release.win32;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <AdditionalDependencies>qtmain.lib;Qt5Cored.lib;Qt5Guid.lib;Qt5OpenGLd.lib;opengl32.lib;glu32.lib;Qt5Widgetsd.lib;$(_COCOS_LIB_WIN32_BEGIN);$(_COCOS_LIB_WIN32_END);%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <Bscmake>
+      <PreserveSbr>true</PreserveSbr>
+    </Bscmake>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="Classes\AppDelegate.cpp" />
+    <ClCompile Include="Classes\ByteArray.cpp" />
+    <ClCompile Include="Classes\ClickButton.cpp" />
+    <ClCompile Include="Classes\CocosQtPort\CCQApplication.cpp" />
+    <ClCompile Include="Classes\CocosQtPort\CCQGLView.cpp" />
+    <ClCompile Include="Classes\CocosQtPort\CCQGLWidget.cpp" />
+    <ClCompile Include="Classes\DrawLayer.cpp" />
+    <ClCompile Include="Classes\DrawNodeMath.cpp" />
+    <ClCompile Include="Classes\DrawNodeVertices.cpp" />
+    <ClCompile Include="Classes\Export_Data.cpp" />
+    <ClCompile Include="Classes\HelloWorldScene.cpp" />
+    <ClCompile Include="Classes\json\json_reader.cpp" />
+    <ClCompile Include="Classes\json\json_value.cpp" />
+    <ClCompile Include="Classes\json\json_writer.cpp" />
+    <ClCompile Include="Classes\MyLineVector.cpp" />
+    <ClCompile Include="Classes\MySpine.cpp" />
+    <ClCompile Include="Classes\QTClass\EffectTreeWidget.cpp" />
+    <ClCompile Include="Classes\qtedit.cpp" />
+    <ClCompile Include="Classes\SliderClass.cpp" />
+    <ClCompile Include="Classes\SpineIncl.cpp" />
+    <ClCompile Include="Classes\SQLite\DBUtil.cpp" />
+    <ClCompile Include="Classes\SQLite\shell.c" />
+    <ClCompile Include="Classes\SQLite\sqlite3.c" />
+    <ClCompile Include="Classes\SQLite\TableDetail.cpp" />
+    <ClCompile Include="Classes\StringUtil.cpp" />
+    <ClCompile Include="Classes\VerticesCopy.cpp" />
+    <ClCompile Include="GeneratedFiles\Debug\moc_CCQApplication.cpp" />
+    <ClCompile Include="GeneratedFiles\Debug\moc_CCQGLWidget.cpp" />
+    <ClCompile Include="GeneratedFiles\Debug\moc_ClickButton.cpp" />
+    <ClCompile Include="GeneratedFiles\Debug\moc_EffectTreeWidget.cpp" />
+    <ClCompile Include="GeneratedFiles\Debug\moc_Export_Data.cpp" />
+    <ClCompile Include="GeneratedFiles\Debug\moc_qtedit.cpp" />
+    <ClCompile Include="GeneratedFiles\Debug\moc_SliderClass.cpp" />
+    <ClCompile Include="GeneratedFiles\Release\moc_CCQApplication.cpp" />
+    <ClCompile Include="GeneratedFiles\Release\moc_CCQGLWidget.cpp" />
+    <ClCompile Include="GeneratedFiles\Release\moc_ClickButton.cpp" />
+    <ClCompile Include="GeneratedFiles\Release\moc_EffectTreeWidget.cpp" />
+    <ClCompile Include="GeneratedFiles\Release\moc_Export_Data.cpp" />
+    <ClCompile Include="GeneratedFiles\Release\moc_qtedit.cpp" />
+    <ClCompile Include="GeneratedFiles\Release\moc_SliderClass.cpp" />
+    <ClCompile Include="Global.cpp" />
+    <ClCompile Include="main.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="qtedit.ui">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Uic%27ing %(Identity)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\GeneratedFiles\ui_%(Filename).h;%(Outputs)</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\uic.exe" -o ".\GeneratedFiles\ui_%(Filename).h" "%(FullPath)"</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Uic%27ing %(Identity)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles\ui_%(Filename).h;%(Outputs)</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\uic.exe" -o ".\GeneratedFiles\ui_%(Filename).h" "%(FullPath)"</Command>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Classes\AppDelegate.h" />
+    <ClInclude Include="Classes\ByteArray.h" />
+    <ClInclude Include="Classes\DrawLayer.h" />
+    <ClInclude Include="Classes\DrawNodeMath.h" />
+    <ClInclude Include="Classes\DrawNodeVertices.h" />
+    <ClInclude Include="Classes\HelloWorldScene.h" />
+    <ClInclude Include="Classes\MyConfig.h" />
+    <ClInclude Include="Classes\MyLineVector.h" />
+    <ClInclude Include="Classes\MySpine.h" />
+    <ClInclude Include="Global.h" />
+    <CustomBuild Include="Classes\QTClass\EffectTreeWidget.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing EffectTreeWidget.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"  -DUNICODE -DWIN32 -DWIN64 -DQT_DLL -DQT_CORE_LIB -DQT_GUI_LIB -DQT_OPENGL_LIB -DQT_WIDGETS_LIB -D_DEBUG -D_WINDOWS -D_USE_MATH_DEFINES -DGL_GLEXT_PROTOTYPES -DCC_ENABLE_CHIPMUNK_INTEGRATION=1 -DCOCOS2D_DEBUG=1 -D_CRT_SECURE_NO_WARNINGS -D_SCL_SECURE_NO_WARNINGS -D_VARIADIC_MAX=10 "-I.\GeneratedFiles" "-I." "-I$(QTDIR)\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtOpenGL" "-I$(QTDIR)\include\QtWidgets" "-I$(EngineRoot)cocos\audio\include" "-I$(EngineRoot)external" "-I$(EngineRoot)external\chipmunk\include\chipmunk" "-I$(EngineRoot)extensions" "-I.\Classes" "-I.\.." "-I$(INHERIT)\." "-I$(_COCOS_HEADER_WIN32_BEGIN)\." "-I$(_COCOS_HEADER_WIN32_END)\." "-I.\Classes\SQLite" "-I.\Classes\json" "-I.\Classes\CocosQtPort" "-I$(EngineRoot)cocos\editor-support" "-I$(EngineRoot)cocos" "-I$(EngineRoot)cocos\platform" "-I$(EngineRoot)cocos\platform\desktop" "-I$(EngineRoot)external\glfw3\include\win32" "-I$(EngineRoot)external\win32-specific\gles\include\OGLES" "-I$(EngineRoot)external\freetype2\include\win32\freetype2" "-I$(EngineRoot)external\freetype2\include\win32" "-I$(NOINHERIT)\."</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing EffectTreeWidget.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"  -DUNICODE -DWIN32 -DWIN64 -DQT_DLL -DQT_CORE_LIB -DQT_GUI_LIB -DQT_OPENGL_LIB -DQT_NO_DEBUG -DNDEBUG -DQT_WIDGETS_LIB -D_WINDOWS -D_USE_MATH_DEFINES -DGL_GLEXT_PROTOTYPES -DCC_ENABLE_CHIPMUNK_INTEGRATION=1 -D_CRT_SECURE_NO_WARNINGS -D_SCL_SECURE_NO_WARNINGS -D_VARIADIC_MAX=10 "-I.\GeneratedFiles" "-I." "-I$(QTDIR)\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtOpenGL" "-I$(QTDIR)\include\QtWidgets" "-I$(EngineRoot)cocos\audio\include" "-I$(EngineRoot)external" "-I$(EngineRoot)external\chipmunk\include\chipmunk" "-I$(EngineRoot)extensions" "-I.\Classes" "-I.\.." "-I$(INHERIT)\." "-I$(_COCOS_HEADER_WIN32_BEGIN)\." "-I$(_COCOS_HEADER_WIN32_END)\." "-I.\Classes\SQLite" "-I.\Classes\json" "-I.\Classes\CocosQtPort" "-I$(EngineRoot)cocos\editor-support" "-I$(EngineRoot)cocos" "-I$(EngineRoot)cocos\platform" "-I$(EngineRoot)cocos\platform\desktop" "-I$(EngineRoot)external\glfw3\include\win32" "-I$(EngineRoot)external\win32-specific\gles\include\OGLES" "-I$(EngineRoot)external\freetype2\include\win32\freetype2" "-I$(EngineRoot)external\freetype2\include\win32" "-I$(NOINHERIT)\."</Command>
+    </CustomBuild>
+    <ClInclude Include="Classes\SpineIncl.h" />
+    <ClInclude Include="Classes\StringUtil.h" />
+    <ClInclude Include="Classes\VerticesCopy.h" />
+    <CustomBuild Include="Classes\SliderClass.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing SliderClass.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"  -DUNICODE -DWIN32 -DWIN64 -DQT_DLL -DQT_CORE_LIB -DQT_GUI_LIB -DQT_OPENGL_LIB -DQT_WIDGETS_LIB -D_DEBUG -D_WINDOWS -D_USE_MATH_DEFINES -DGL_GLEXT_PROTOTYPES -DCC_ENABLE_CHIPMUNK_INTEGRATION=1 -DCOCOS2D_DEBUG=1 -D_CRT_SECURE_NO_WARNINGS -D_SCL_SECURE_NO_WARNINGS -D_VARIADIC_MAX=10 "-I.\GeneratedFiles" "-I." "-I$(QTDIR)\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtOpenGL" "-I$(QTDIR)\include\QtWidgets" "-I$(EngineRoot)cocos\audio\include" "-I$(EngineRoot)external" "-I$(EngineRoot)external\chipmunk\include\chipmunk" "-I$(EngineRoot)extensions" "-I.\..\Classes" "-I.\.." "-I$(INHERIT)\." "-I$(_COCOS_HEADER_WIN32_BEGIN)\." "-I$(_COCOS_HEADER_WIN32_END)\." "-I$(EngineRoot)cocos\editor-support" "-I$(EngineRoot)cocos" "-I$(EngineRoot)cocos\platform" "-I$(EngineRoot)cocos\platform\desktop" "-I$(EngineRoot)external\glfw3\include\win32" "-I$(EngineRoot)external\win32-specific\gles\include\OGLES" "-I$(EngineRoot)external\freetype2\include\win32\freetype2" "-I$(EngineRoot)external\freetype2\include\win32" "-I$(NOINHERIT)\."</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing SliderClass.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"  -DUNICODE -DWIN32 -DWIN64 -DQT_DLL -DQT_NO_DEBUG -DNDEBUG -DQT_CORE_LIB -DQT_GUI_LIB -DQT_OPENGL_LIB -DQT_WIDGETS_LIB -D_VARIADIC_MAX=10 "-I.\GeneratedFiles" "-I." "-I$(QTDIR)\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtOpenGL" "-I$(QTDIR)\include\QtWidgets" "-I$(EngineRoot)cocos\editor-support" "-I$(EngineRoot)cocos" "-I$(EngineRoot)cocos\platform" "-I$(EngineRoot)cocos\platform\desktop" "-I$(EngineRoot)external\glfw3\include\win32" "-I$(EngineRoot)external\win32-specific\gles\include\OGLES" "-I$(EngineRoot)external\freetype2\include\win32\freetype2" "-I$(EngineRoot)external\freetype2\include\win32" "-I$(NOINHERIT)\."</Command>
+    </CustomBuild>
+    <CustomBuild Include="Classes\qtedit.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing qtedit.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"  -DUNICODE -DWIN32 -DWIN64 -DQT_DLL -DQT_CORE_LIB -DQT_GUI_LIB -DQT_OPENGL_LIB -DQT_WIDGETS_LIB -D_DEBUG -D_WINDOWS -D_USE_MATH_DEFINES -DGL_GLEXT_PROTOTYPES -DCC_ENABLE_CHIPMUNK_INTEGRATION=1 -DCOCOS2D_DEBUG=1 -D_CRT_SECURE_NO_WARNINGS -D_SCL_SECURE_NO_WARNINGS -D_VARIADIC_MAX=10 "-I.\GeneratedFiles" "-I." "-I$(QTDIR)\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtOpenGL" "-I$(QTDIR)\include\QtWidgets" "-I$(EngineRoot)cocos\audio\include" "-I$(EngineRoot)external" "-I$(EngineRoot)external\chipmunk\include\chipmunk" "-I$(EngineRoot)extensions" "-I.\..\Classes" "-I.\.." "-I$(INHERIT)\." "-I$(_COCOS_HEADER_WIN32_BEGIN)\." "-I$(_COCOS_HEADER_WIN32_END)\." "-I$(EngineRoot)cocos\editor-support" "-I$(EngineRoot)cocos" "-I$(EngineRoot)cocos\platform" "-I$(EngineRoot)cocos\platform\desktop" "-I$(EngineRoot)external\glfw3\include\win32" "-I$(EngineRoot)external\win32-specific\gles\include\OGLES" "-I$(EngineRoot)external\freetype2\include\win32\freetype2" "-I$(EngineRoot)external\freetype2\include\win32" "-I$(NOINHERIT)\."</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing qtedit.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"  -DUNICODE -DWIN32 -DWIN64 -DQT_DLL -DQT_NO_DEBUG -DNDEBUG -DQT_CORE_LIB -DQT_GUI_LIB -DQT_OPENGL_LIB -DQT_WIDGETS_LIB -D_VARIADIC_MAX=10 "-I.\GeneratedFiles" "-I." "-I$(QTDIR)\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtOpenGL" "-I$(QTDIR)\include\QtWidgets" "-I$(EngineRoot)cocos\editor-support" "-I$(EngineRoot)cocos" "-I$(EngineRoot)cocos\platform" "-I$(EngineRoot)cocos\platform\desktop" "-I$(EngineRoot)external\glfw3\include\win32" "-I$(EngineRoot)external\win32-specific\gles\include\OGLES" "-I$(EngineRoot)external\freetype2\include\win32\freetype2" "-I$(EngineRoot)external\freetype2\include\win32" "-I$(NOINHERIT)\."</Command>
+    </CustomBuild>
+    <CustomBuild Include="Classes\Export_Data.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing Export_Data.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"  -DUNICODE -DWIN32 -DWIN64 -DQT_DLL -DQT_CORE_LIB -DQT_GUI_LIB -DQT_OPENGL_LIB -DQT_WIDGETS_LIB -D_DEBUG -D_WINDOWS -D_USE_MATH_DEFINES -DGL_GLEXT_PROTOTYPES -DCC_ENABLE_CHIPMUNK_INTEGRATION=1 -DCOCOS2D_DEBUG=1 -D_CRT_SECURE_NO_WARNINGS -D_SCL_SECURE_NO_WARNINGS -D_VARIADIC_MAX=10 "-I.\GeneratedFiles" "-I." "-I$(QTDIR)\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtOpenGL" "-I$(QTDIR)\include\QtWidgets" "-I$(EngineRoot)cocos\audio\include" "-I$(EngineRoot)external" "-I$(EngineRoot)external\chipmunk\include\chipmunk" "-I$(EngineRoot)extensions" "-I.\..\Classes" "-I.\.." "-I$(INHERIT)\." "-I$(_COCOS_HEADER_WIN32_BEGIN)\." "-I$(_COCOS_HEADER_WIN32_END)\." "-I$(EngineRoot)cocos\editor-support" "-I$(EngineRoot)cocos" "-I$(EngineRoot)cocos\platform" "-I$(EngineRoot)cocos\platform\desktop" "-I$(EngineRoot)external\glfw3\include\win32" "-I$(EngineRoot)external\win32-specific\gles\include\OGLES" "-I$(EngineRoot)external\freetype2\include\win32\freetype2" "-I$(EngineRoot)external\freetype2\include\win32" "-I$(NOINHERIT)\."</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing Export_Data.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"  -DUNICODE -DWIN32 -DWIN64 -DQT_DLL -DQT_NO_DEBUG -DNDEBUG -DQT_CORE_LIB -DQT_GUI_LIB -DQT_OPENGL_LIB -DQT_WIDGETS_LIB -D_VARIADIC_MAX=10 "-I.\GeneratedFiles" "-I." "-I$(QTDIR)\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtOpenGL" "-I$(QTDIR)\include\QtWidgets" "-I$(EngineRoot)cocos\editor-support" "-I$(EngineRoot)cocos" "-I$(EngineRoot)cocos\platform" "-I$(EngineRoot)cocos\platform\desktop" "-I$(EngineRoot)external\glfw3\include\win32" "-I$(EngineRoot)external\win32-specific\gles\include\OGLES" "-I$(EngineRoot)external\freetype2\include\win32\freetype2" "-I$(EngineRoot)external\freetype2\include\win32" "-I$(NOINHERIT)\."</Command>
+    </CustomBuild>
+    <CustomBuild Include="Classes\ClickButton.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing ClickButton.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"  -DUNICODE -DWIN32 -DWIN64 -DQT_DLL -DQT_CORE_LIB -DQT_GUI_LIB -DQT_OPENGL_LIB -DQT_WIDGETS_LIB -D_DEBUG -D_WINDOWS -D_USE_MATH_DEFINES -DGL_GLEXT_PROTOTYPES -DCC_ENABLE_CHIPMUNK_INTEGRATION=1 -DCOCOS2D_DEBUG=1 -D_CRT_SECURE_NO_WARNINGS -D_SCL_SECURE_NO_WARNINGS -D_VARIADIC_MAX=10 "-I.\GeneratedFiles" "-I." "-I$(QTDIR)\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtOpenGL" "-I$(QTDIR)\include\QtWidgets" "-I$(EngineRoot)cocos\audio\include" "-I$(EngineRoot)external" "-I$(EngineRoot)external\chipmunk\include\chipmunk" "-I$(EngineRoot)extensions" "-I.\..\Classes" "-I.\.." "-I$(INHERIT)\." "-I$(_COCOS_HEADER_WIN32_BEGIN)\." "-I$(_COCOS_HEADER_WIN32_END)\." "-I$(EngineRoot)cocos\editor-support" "-I$(EngineRoot)cocos" "-I$(EngineRoot)cocos\platform" "-I$(EngineRoot)cocos\platform\desktop" "-I$(EngineRoot)external\glfw3\include\win32" "-I$(EngineRoot)external\win32-specific\gles\include\OGLES" "-I$(EngineRoot)external\freetype2\include\win32\freetype2" "-I$(EngineRoot)external\freetype2\include\win32" "-I$(NOINHERIT)\."</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing ClickButton.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"  -DUNICODE -DWIN32 -DWIN64 -DQT_DLL -DQT_NO_DEBUG -DNDEBUG -DQT_CORE_LIB -DQT_GUI_LIB -DQT_OPENGL_LIB -DQT_WIDGETS_LIB -D_VARIADIC_MAX=10 "-I.\GeneratedFiles" "-I." "-I$(QTDIR)\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtOpenGL" "-I$(QTDIR)\include\QtWidgets" "-I$(EngineRoot)cocos\editor-support" "-I$(EngineRoot)cocos" "-I$(EngineRoot)cocos\platform" "-I$(EngineRoot)cocos\platform\desktop" "-I$(EngineRoot)external\glfw3\include\win32" "-I$(EngineRoot)external\win32-specific\gles\include\OGLES" "-I$(EngineRoot)external\freetype2\include\win32\freetype2" "-I$(EngineRoot)external\freetype2\include\win32" "-I$(NOINHERIT)\."</Command>
+    </CustomBuild>
+    <ClInclude Include="Classes\CocosQtPort\CCQGLView.h" />
+    <ClInclude Include="Classes\json\autolink.h" />
+    <ClInclude Include="Classes\json\config.h" />
+    <ClInclude Include="Classes\json\features.h" />
+    <ClInclude Include="Classes\json\forwards.h" />
+    <ClInclude Include="Classes\json\json.h" />
+    <ClInclude Include="Classes\json\json_batchallocator.h" />
+    <ClInclude Include="Classes\json\reader.h" />
+    <ClInclude Include="Classes\json\value.h" />
+    <ClInclude Include="Classes\json\writer.h" />
+    <ClInclude Include="Classes\SQLite\DBUtil.h" />
+    <ClInclude Include="Classes\SQLite\sqlite3.h" />
+    <ClInclude Include="Classes\SQLite\sqlite3ext.h" />
+    <ClInclude Include="Classes\SQLite\TableDetail.h" />
+    <CustomBuild Include="Classes\CocosQtPort\CCQGLWidget.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing CCQGLWidget.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"  -DUNICODE -DWIN32 -DWIN64 -DQT_DLL -DQT_CORE_LIB -DQT_GUI_LIB -DQT_OPENGL_LIB -DQT_WIDGETS_LIB -D_DEBUG -D_WINDOWS -D_USE_MATH_DEFINES -DGL_GLEXT_PROTOTYPES -DCC_ENABLE_CHIPMUNK_INTEGRATION=1 -DCOCOS2D_DEBUG=1 -D_CRT_SECURE_NO_WARNINGS -D_SCL_SECURE_NO_WARNINGS -D_VARIADIC_MAX=10 "-I.\GeneratedFiles" "-I." "-I$(QTDIR)\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtOpenGL" "-I$(QTDIR)\include\QtWidgets" "-I$(EngineRoot)cocos\audio\include" "-I$(EngineRoot)external" "-I$(EngineRoot)external\chipmunk\include\chipmunk" "-I$(EngineRoot)extensions" "-I.\..\Classes" "-I.\.." "-I$(INHERIT)\." "-I$(_COCOS_HEADER_WIN32_BEGIN)\." "-I$(_COCOS_HEADER_WIN32_END)\." "-I$(EngineRoot)cocos\editor-support" "-I$(EngineRoot)cocos" "-I$(EngineRoot)cocos\platform" "-I$(EngineRoot)cocos\platform\desktop" "-I$(EngineRoot)external\glfw3\include\win32" "-I$(EngineRoot)external\win32-specific\gles\include\OGLES" "-I$(EngineRoot)external\freetype2\include\win32\freetype2" "-I$(EngineRoot)external\freetype2\include\win32" "-I$(NOINHERIT)\."</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing CCQGLWidget.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"  -DUNICODE -DWIN32 -DWIN64 -DQT_DLL -DQT_NO_DEBUG -DNDEBUG -DQT_CORE_LIB -DQT_GUI_LIB -DQT_OPENGL_LIB -DQT_WIDGETS_LIB -D_VARIADIC_MAX=10 "-I.\GeneratedFiles" "-I." "-I$(QTDIR)\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtOpenGL" "-I$(QTDIR)\include\QtWidgets" "-I$(EngineRoot)cocos\editor-support" "-I$(EngineRoot)cocos" "-I$(EngineRoot)cocos\platform" "-I$(EngineRoot)cocos\platform\desktop" "-I$(EngineRoot)external\glfw3\include\win32" "-I$(EngineRoot)external\win32-specific\gles\include\OGLES" "-I$(EngineRoot)external\freetype2\include\win32\freetype2" "-I$(EngineRoot)external\freetype2\include\win32" "-I$(NOINHERIT)\."</Command>
+    </CustomBuild>
+    <CustomBuild Include="Classes\CocosQtPort\CCQApplication.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing CCQApplication.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"  -DUNICODE -DWIN32 -DWIN64 -DQT_DLL -DQT_CORE_LIB -DQT_GUI_LIB -DQT_OPENGL_LIB -DQT_WIDGETS_LIB -D_DEBUG -D_WINDOWS -D_USE_MATH_DEFINES -DGL_GLEXT_PROTOTYPES -DCC_ENABLE_CHIPMUNK_INTEGRATION=1 -DCOCOS2D_DEBUG=1 -D_CRT_SECURE_NO_WARNINGS -D_SCL_SECURE_NO_WARNINGS -D_VARIADIC_MAX=10 "-I.\GeneratedFiles" "-I." "-I$(QTDIR)\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtOpenGL" "-I$(QTDIR)\include\QtWidgets" "-I$(EngineRoot)cocos\audio\include" "-I$(EngineRoot)external" "-I$(EngineRoot)external\chipmunk\include\chipmunk" "-I$(EngineRoot)extensions" "-I.\..\Classes" "-I.\.." "-I$(INHERIT)\." "-I$(_COCOS_HEADER_WIN32_BEGIN)\." "-I$(_COCOS_HEADER_WIN32_END)\." "-I$(EngineRoot)cocos\editor-support" "-I$(EngineRoot)cocos" "-I$(EngineRoot)cocos\platform" "-I$(EngineRoot)cocos\platform\desktop" "-I$(EngineRoot)external\glfw3\include\win32" "-I$(EngineRoot)external\win32-specific\gles\include\OGLES" "-I$(EngineRoot)external\freetype2\include\win32\freetype2" "-I$(EngineRoot)external\freetype2\include\win32" "-I$(NOINHERIT)\."</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing CCQApplication.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"  -DUNICODE -DWIN32 -DWIN64 -DQT_DLL -DQT_NO_DEBUG -DNDEBUG -DQT_CORE_LIB -DQT_GUI_LIB -DQT_OPENGL_LIB -DQT_WIDGETS_LIB -D_VARIADIC_MAX=10 "-I.\GeneratedFiles" "-I." "-I$(QTDIR)\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtOpenGL" "-I$(QTDIR)\include\QtWidgets" "-I$(EngineRoot)cocos\editor-support" "-I$(EngineRoot)cocos" "-I$(EngineRoot)cocos\platform" "-I$(EngineRoot)cocos\platform\desktop" "-I$(EngineRoot)external\glfw3\include\win32" "-I$(EngineRoot)external\win32-specific\gles\include\OGLES" "-I$(EngineRoot)external\freetype2\include\win32\freetype2" "-I$(EngineRoot)external\freetype2\include\win32" "-I$(NOINHERIT)\."</Command>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="qtedit.qrc">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(FullPath);%(AdditionalInputs)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Rcc%27ing %(Identity)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\GeneratedFiles\qrc_%(Filename).cpp;%(Outputs)</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\rcc.exe" -name "%(Filename)" -no-compress "%(FullPath)" -o .\GeneratedFiles\qrc_%(Filename).cpp</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(FullPath);%(AdditionalInputs)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Rcc%27ing %(Identity)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles\qrc_%(Filename).cpp;%(Outputs)</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\rcc.exe" -name "%(Filename)" -no-compress "%(FullPath)" -o .\GeneratedFiles\qrc_%(Filename).cpp</Command>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Classes\json\json_internalarray.inl" />
+    <None Include="Classes\json\json_internalmap.inl" />
+    <None Include="Classes\json\json_valueiterator.inl" />
+    <None Include="Classes\json\sconscript" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="cocos2d\cocos\2d\libcocos2d.vcxproj">
+      <Project>{98a51ba8-fc3a-415b-ac8f-8c7bd464e93e}</Project>
+    </ProjectReference>
+    <ProjectReference Include="cocos2d\cocos\editor-support\spine\proj.win32\libSpine.vcxproj">
+      <Project>{b7c2a162-dec9-4418-972e-240ab3cbfcae}</Project>
+    </ProjectReference>
+    <ProjectReference Include="cocos2d\external\Box2D\proj.win32\libbox2d.vcxproj">
+      <Project>{929480e7-23c0-4df6-8456-096d71547116}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties MocDir=".\GeneratedFiles\$(ConfigurationName)" UicDir=".\GeneratedFiles" RccDir=".\GeneratedFiles" lupdateOptions="" lupdateOnBuild="0" lreleaseOptions="" Qt5Version_x0020_Win32="QT32" MocOptions="" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>
